@@ -290,8 +290,7 @@ $done(conn)
     });
 let con = `
 ${f(tarStr).replace(/<i>|<\/i>/g,"")}</div><a href="${findNextUrl(result,urls)}">下一页</a>`
-//好多li  <i>大</i>
-console.log(con)
+//好多i
 $done(con)
 
     return {
