@@ -82,7 +82,7 @@ const fonts = {"&#xe800":"的","&#xe801":"一","&#xe802":"是","&#xe803":"了","
     return content.replaceAll(/<[^>]*>/g, '').replaceAll(/\n\n\n\n/g, '\n').replaceAll(/\n\n/g, '').trim();
   }
 
-  let findNextUrl = (html, currUrl) => {
+  let findNextUrl = (html, currUrl) => {//下一页
     let nextHref = null;
 
     let pagesMatches = html.match(/<center class="chapterPages">(.*)<\/center>/s)
@@ -128,7 +128,196 @@ const fonts = {"&#xe800":"的","&#xe801":"一","&#xe802":"是","&#xe803":"了","
 
 
 var result = $response.body
-var urls = $request.url
+var urls = $request
+var ck = urls.headers["Cookie"]
+var ua = urls.headers["User-Agent"]
+urls = urls.url
 
 
- let beginStr=">\"ofniretpahc\"=di vid<".split("").reverse().join("");let beginIndex=result["\u0069\u006e\u0064\u0065\u0078\u004f\u0066"](beginStr);if(beginIndex>(0xcf0c9^0xcf0c9)){let subStr=result["\u0073\u0075\u0062\u0073\u0074\u0072"](beginIndex+beginStr["\u006c\u0065\u006e\u0067\u0074\u0068"]);let endIndex=subStr["\u0069\u006e\u0064\u0065\u0078\u004f\u0066"]("\u003c\u002f\u0064\u0069\u0076\u003e");let tarStr=subStr["\u0073\u0075\u0062\u0073\u0074\u0072"](0x2b2b2^0x2b2b2,endIndex);let con='\x0a<div\x20class=\x22chapterinfo\x22\x20id=\x22chapterinfo\x22>'+f(tarStr)+"\"=ferh a<>vid/<".split("").reverse().join("")+findNextUrl(result,urls)+">a/<\u9875\u4E00\u4E0B>\"".split("").reverse().join("");$done(con);}beginStr='var\x20chapter\x20=\x20secret(';beginIndex=result['indexOf'](beginStr);if(beginIndex>(0xe5832^0xe5832)){let subStr=result['substr'](beginIndex+beginStr["\u006c\u0065\u006e\u0067\u0074\u0068"]);let endIndex=subStr['indexOf']("\u0029\u003b");let tarStr=subStr["\u0073\u0075\u0062\u0073\u0074\u0072"](0xcb41a^0xcb41a,endIndex);tarStr=tarStr['replace'](/\s+/g,"".split("").reverse().join(""));let matches=tarStr['match'](/"(.*)".*'(.*)'/);if(matches["\u006c\u0065\u006e\u0067\u0074\u0068"]===(0x7ef58^0x7ef5b)){let encodedStr=matches[0x6478f^0x6478e];let code=matches[0x187e3^0x187e1];let decodedStr=secret(encodedStr,code,!![]);let con='\x0a<div\x20class=\x22chapterinfo\x22\x20id=\x22chapterinfo\x22>'+f(decodedStr)+"\"=ferh a<>vid/<".split("").reverse().join("")+findNextUrl(result,urls)+">a/<\u9875\u4E00\u4E0B>\"".split("").reverse().join("");}}beginStr=">\"retpahc\"=di vid<".split("").reverse().join("");beginIndex=result["\u0069\u006e\u0064\u0065\u0078\u004f\u0066"](beginStr);if(beginIndex>(0x23675^0x23675)){let beginNsStr="'=sn rav".split("").reverse().join("");let beginNsIndex=result["\u0069\u006e\u0064\u0065\u0078\u004f\u0066"](beginNsStr);let subNsStr=result['substr'](beginNsIndex+beginNsStr["\u006c\u0065\u006e\u0067\u0074\u0068"]);let endNsIndex=subNsStr["\u0069\u006e\u0064\u0065\u0078\u004f\u0066"]('\x27;');let nsStr=atob(subNsStr['substr'](0xa87fb^0xa87fb,endNsIndex));console["\u006c\u006f\u0067"](nsStr);let matches=result['match'](/<div class="(\w{8})" id="\1">(.*?)<\/div>/s);if(matches["\u006c\u0065\u006e\u0067\u0074\u0068"]===(0xb564a^0xb5649)){let tarStr=matches[0x4b928^0x4b92a];tarStr=tarStr['replaceAll'](/<img src="\/toimg\/data\/([a-z0-9]+\.png)"\s*\/>/g,function(_0x5da61f,_0x2f0ab5){return imgMaps[_0x2f0ab5];});let lineArr=tarStr['split'](">rb<>rb<".split("").reverse().join(""));let nsArr=nsStr['split']("\u002c");let startLine=nsArr[0x2517b^0x2517b];let res='';for(let i=0x66074^0x66075;i<nsArr["\u006c\u0065\u006e\u0067\u0074\u0068"];i++){res+=lineArr[nsArr[i]-startLine]+'\x0a';}let con='\x0a<div\x20class=\x22chapterinfo\x22\x20id=\x22chapterinfo\x22>'+f(res)+"\"=ferh a<>vid/<".split("").reverse().join("")+findNextUrl(result,urls)+'\x22>下一页</a>';console["\u006c\u006f\u0067"](con);$done(con);}}if(result["\u0069\u006e\u0064\u0065\u0078\u004f\u0066"]('err')>0x0){let con='\x0a<div\x20class=\x22chapterinfo\x22\x20id=\x22chapterinfo\x22></div><a\x20href=\x22'+findNextUrl(result,urls)+">a/<\u9875\u4E00\u4E0B>\"".split("").reverse().join("");$done(con);}if(result["\u0073\u0065\u0061\u0072\u0063\u0068"](/{'j':'1'}/)!==-(0x2a6c5^0x2a6c4)){beginStr=">\"gnorien\"=ssalc vid<".split("").reverse().join("");beginIndex=result['indexOf'](beginStr);if(beginIndex>(0x4a2fd^0x4a2fd)){let subStr=result['substr'](beginIndex+beginStr["\u006c\u0065\u006e\u0067\u0074\u0068"]);let endIndex=subStr["\u0069\u006e\u0064\u0065\u0078\u004f\u0066"](">vid/<".split("").reverse().join(""));let tarStr=subStr["\u0073\u0075\u0062\u0073\u0074\u0072"](0x0,endIndex);tarStr=tarStr['replaceAll'](/<img src="\/toimg\/data\/([a-z0-9]+\.png)"\s*\/>/g,function(_0x2d1b9e,_0x2228fe){return imgMaps[_0x2228fe];});let con='\x0a<div\x20class=\x22chapterinfo\x22\x20id=\x22chapterinfo\x22>'+f(tarStr)+'</div><a\x20href=\x22'+findNextUrl(result,urls)+'\x22>下一页</a>';$done(con);}}beginStr=">\"gnorien\"=ssalc vid<".split("").reverse().join("");beginIndex=result["\u0069\u006e\u0064\u0065\u0078\u004f\u0066"](beginStr);if(beginIndex>(0xc0425^0xc0425)){let subStr=result['substr'](beginIndex+beginStr["\u006c\u0065\u006e\u0067\u0074\u0068"]);let endIndex=subStr["\u0069\u006e\u0064\u0065\u0078\u004f\u0066"](">vid/<".split("").reverse().join(""));let tarStr=subStr["\u0073\u0075\u0062\u0073\u0074\u0072"](0x0,endIndex);tarStr=tarStr["\u0072\u0065\u0070\u006c\u0061\u0063\u0065\u0041\u006c\u006c"](/<img src="\/toimg\/data\/([a-z0-9]+\.png)"\s*\/>/g,function(_0x33f22c,_0x2edcbd){return imgMaps[_0x2edcbd];});let con='\x0a<div\x20class=\x22chapterinfo\x22\x20id=\x22chapterinfo\x22>'+f(tarStr)+'</div><a\x20href=\x22'+findNextUrl(result,urls)+">a/<\u9875\u4E00\u4E0B>\"".split("").reverse().join("");$done(con);}let tarStr=result['replaceAll'](/<img src="\/toimg\/data\/([a-z0-9]+\.png)"\s*\/>/g,function(_0x52c51c,_0x47ceb4){return imgMaps[_0x47ceb4];});let con=">\"ofniretpahc\"=di \"ofniretpahc\"=ssalc vid<\n".split("").reverse().join("")+f(tarStr)+"\"=ferh a<>vid/<".split("").reverse().join("")+findNextUrl(result,urls)+'\x22>下一页</a>';$done(con);
+
+
+  let beginStr = '<div id="chapterinfo">';
+  let beginIndex = result.indexOf(beginStr);
+  if (beginIndex > 0) { // 顺序 无图片替换
+    let subStr = result.substr(beginIndex + beginStr.length);
+    let endIndex = subStr.indexOf('</div>');
+    let tarStr = subStr.substr(0, endIndex);
+let con = `
+${f(tarStr)}</div><a href="${findNextUrl(result,urls)}">下一页</a>`
+
+$done(con)
+/*
+return {
+      content: f(tarStr),
+      'removeHtmlKeys': 'content',
+      autoRequestMore: true,
+      nextUrl: findNextUrl(result, params.responseUrl),
+      nextParams: {}
+    };
+*/
+  }
+
+  beginStr = 'var chapter = secret(';
+  beginIndex = result.indexOf(beginStr);
+  if (beginIndex > 0) { // AES加密
+    let subStr = result.substr(beginIndex + beginStr.length);
+    let endIndex = subStr.indexOf(');');
+    let tarStr = subStr.substr(0, endIndex);
+    tarStr = tarStr.replace(/\s+/g, "")
+    let matches = tarStr.match(/"(.*)".*'(.*)'/);
+
+    if (matches.length === 3) {
+      let encodedStr = matches[1]
+      let code = matches[2]
+
+      let decodedStr = secret(encodedStr, code, true)
+
+let con = `
+${f(decodedStr)}</div><a href="${findNextUrl(result,urls)}">下一页</a>`
+
+$done(con)
+      console.log("这是正文：" + f(decodedStr), "这是下一页：" + findNextUrl(result, "https://www.1yydstxt178.com/36/36777/798053_2.html"));
+    
+    }
+    
+  }
+
+  beginStr = '<div id="chapter">';
+  beginIndex = result.indexOf(beginStr);
+  if (beginIndex > 0) { // 乱序，图片替换
+    let beginNsStr = "var ns='";
+    let beginNsIndex = result.indexOf(beginNsStr);
+    let subNsStr = result.substr(beginNsIndex + beginNsStr.length);
+    let endNsIndex = subNsStr.indexOf("';");
+
+    let nsStr = atob(subNsStr.substr(0, endNsIndex));   //be64
+
+    let matches = result.match(/<div class="(\w{8})" id="\1">(.*?)<\/div>/s)
+    if (matches.length === 3) {
+      let tarStr = matches[2];
+      tarStr = tarStr.replaceAll(/<img src="\/toimg\/data\/([a-z0-9]+\.png)"\s*\/>/g, function (a, b) {
+        return imgMaps[b];
+      });
+
+      let lineArr = tarStr.split('<br><br>');
+      let nsArr = nsStr.split(',');
+
+      let startLine = nsArr[0];
+
+      let res = '';
+      for (let i = 1; i < nsArr.length; i++) {
+        res += lineArr[nsArr[i] - startLine] + '\n';
+      }
+let con = `
+${f(res)}</div><a href="${findNextUrl(result,urls)}">下一页</a>`
+
+$done(con)
+
+      return {
+        'content': f(res),
+        'removeHtmlKeys': 'content',
+        autoRequestMore: true,
+        nextUrl: findNextUrl(result, params.responseUrl),
+        nextParams: {},
+      };
+    }
+  }
+
+
+
+  if (result.search(/{'j':'1'}/) !== -1) { // 顺序，图片替换，内容截断
+    beginStr = '<div class="neirong">';
+    beginIndex = result.indexOf(beginStr);
+    if (beginIndex > 0) {
+      let subStr = result.substr(beginIndex + beginStr.length);
+      let endIndex = subStr.indexOf('</div>');
+      let tarStr = subStr.substr(0, endIndex);
+
+      tarStr = tarStr.replaceAll(/<img src="\/toimg\/data\/([a-z0-9]+\.png)"\s*\/>/g, function (a, b) {
+        return imgMaps[b];
+      });
+
+
+const myRequest = {
+     url: urls,
+method:"post",
+  body:"j=1",
+     headers:{"user-agent":ua,"Cookie":ck}
+};
+
+
+let con = `
+${f(tarStr)}</div>`
+let p = `<a href="${findNextUrl(result,urls)}">下一页</a>`
+$task.fetch(myRequest).then(res => {
+
+
+let str = res.body
+/*
+for (let key in imgMaps) {
+            let reg = new RegExp(`<img src="/toimg/data/${key}"/>`, "g")
+            str = str.replace(reg, imgMaps[key])
+        }   图片替换
+*/
+str = str.replaceAll(/<img src="\/toimg\/data\/([a-z0-9]+\.png)"\s*\/>/g, function (a, b) {
+        return imgMaps[b];
+      });
+
+let conn = con + f(str) + "<br/>" + p
+$done(conn)
+   
+}, reason => {
+    console.log(reason.error);
+    $done();
+});
+
+
+    }
+  }else{
+
+
+
+
+  beginStr = '<div class="neirong">';
+  beginIndex = result.indexOf(beginStr);
+  if (beginIndex > 0) {
+    let subStr = result.substr(beginIndex + beginStr.length);
+    let endIndex = subStr.indexOf('</div>');
+    let tarStr = subStr.substr(0, endIndex);
+
+    tarStr = tarStr.replaceAll(/<img src="\/toimg\/data\/([a-z0-9]+\.png)"\s*\/>/g, function (a, b) {
+      return imgMaps[b];
+    });
+let con = `
+${f(tarStr).replace(/<i>|<\/i>/g,"")}</div><a href="${findNextUrl(result,urls)}">下一页</a>`
+//好多li  <i>大</i>
+console.log(con)
+$done(con)
+
+    return {
+      'content': f(tarStr),
+      'removeHtmlKeys': 'content',
+      autoRequestMore: true,
+      nextUrl: findNextUrl(result, params.responseUrl),
+      nextParams: {},
+    };
+  }
+
+  let tarStr = result.replaceAll(/<img src="\/toimg\/data\/([a-z0-9]+\.png)"\s*\/>/g, function (a, b) {
+    return imgMaps[b];
+  });
+let con = `
+${f(tarStr)}</div><a href="${findNextUrl(result,urls)}">下一页</a>`
+
+$done(con)
+
+
+  return {
+    'content': f(tarStr),
+    'removeHtmlKeys': 'content',
+    autoRequestMore: true,
+    nextUrl: findNextUrl(result, params.responseUrl),
+    nextParams: {},
+  };
+  
+  }
